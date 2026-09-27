@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logo Library</title>
+  <meta name="description" content="Public logo library — view and download logos.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="brand">LOGO LIBRARY</div>
+      <h1>Logo Gallery</h1>
+      <p>Logos देखें, खोजें और आसानी से डाउनलोड करें।</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#gallery">Browse Logos</a>
+        <a class="btn ghost" href="admin.html">Admin Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="toolbar" aria-label="Logo search">
+      <div>
+        <h2 id="gallery">All Logos</h2>
+        <p id="count" class="muted">Loading...</p>
+      </div>
+      <input id="search" type="search" placeholder="Search logo..." aria-label="Search logos">
+    </section>
+
+    <div id="message" class="message hidden"></div>
+    <section id="grid" class="grid" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Logo Library</span>
+      <a href="admin.html">Admin</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
